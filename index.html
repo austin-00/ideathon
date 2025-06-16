@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ideathon 2025 Submission Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary-color: #0066cc;
+      --background-color: #f9f9f9;
+      --form-background: #ffffff;
+      --border-color: #ddd;
+      --text-color: #333;
+      --button-color: #0066cc;
+      --button-hover: #005bb5;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--background-color);
+      padding: 30px;
+      color: var(--text-color);
+    }
+
+    form {
+      background: var(--form-background);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--primary-color);
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      font-size: 14px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    input[type="file"] {
+      border: none;
+      padding-left: 0;
+    }
+
+    select {
+      background-color: #fff;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 14px 0;
+      width: 100%;
+      background: var(--button-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: var(--button-hover);
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <h2>Ideathon 2025 Submission Form</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="institute">Institute Name:</label>
+    <input type="text" id="institute" name="institute" required>
+
+    <label for="nid">NID Number:</label>
+    <input type="text" id="nid" name="nid" required>
+
+    <label for="team">Team Name (if any):</label>
+    <input type="text" id="team" name="team">
+
+    <label for="members">Team Members' Names:</label>
+    <textarea id="members" name="members" placeholder="Separate names with commas"></textarea>
+
+    <label for="idea-title">Idea Title:</label>
+    <input type="text" id="idea-title" name="idea-title" required>
+
+    <label for="idea-desc">Idea Description:</label>
+    <textarea id="idea-desc" name="idea-desc" placeholder="Describe your innovative idea here..." required></textarea>
+
+    <label for="category">Category of Innovation:</label>
+    <select id="category" name="category" required>
+      <option value="">-- Select Category --</option>
+      <option value="ai">Artificial Intelligence</option>
+      <option value="health">Healthcare & Wellness</option>
+      <option value="edu">Education & Learning</option>
+      <option value="env">Environment & Sustainability</option>
+      <option value="iot">IoT / Smart Devices</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="file">Upload Supporting Files (optional):</label>
+    <input type="file" id="file" name="file">
+
+    <label for="payment-method">Select Payment Method:</label>
+    <select id="payment-method" name="payment-method" required>
+      <option value="">-- Select Payment Method --</option>
+      <option value="bkash">bKash</option>
+      <option value="nagad">Nagad</option>
+      <option value="bank">Bank Transfer</option>
+    </select>
+
+    <label for="payment-proof">Upload Payment Proof (screenshot or receipt):</label>
+    <input type="file" id="payment-proof" name="payment-proof" required>
+
+    <button type="submit">Submit Your Idea</button>
+  </form>
+
+</body>
+</html>
